@@ -1,0 +1,37 @@
+<header class="site-header">
+  <div class="header-inner">
+    <div class="logo">
+      <img class="logo-img" src="/images/logo.png" alt="السادسة" />
+    </div>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">الرئيسية</a></li>
+        <li><a href="#">مباشرة</a></li>
+        <li class="dropdown">
+          <a href="#">
+            مغاربة العالم
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path d="M7 10l5 5 5-5z" />
+            </svg>
+          </a>
+        </li>
+        <li><a routerLink="/about" routerLinkActive="active">من نحن؟</a></li>
+      </ul>
+    </nav>
+
+    <button type="button" class="theme-toggle" (click)="toggleTheme()" aria-label="تبديل المظهر">
+      @if (darkMode()) {
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.5 5.5 0 0 1-7.54-7.54A9 9 0 0 0 12 3z" />
+        </svg>
+      } @else {
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path
+            d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5v2m0 16v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2m16 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+        </svg>
+      }
+    </button>
+  </div>
+</header>

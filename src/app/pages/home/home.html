@@ -1,0 +1,18 @@
+<div class="hero-wrapper">
+  <app-header />
+  <app-hero-banner />
+</div>
+<div class="fade-transition">
+  <app-language-selector />
+</div>
+
+<div class="container">
+  <app-search-filters
+    [programOptions]="programNames()"
+    [topicOptions]="topics()"
+    (filtersChange)="onFiltersChange($event)" />
+
+  <app-program-grid [programs]="filteredPrograms()" />
+</div>
+
+<app-footer />

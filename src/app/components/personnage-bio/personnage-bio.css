@@ -1,0 +1,82 @@
+.personnage-bio {
+  background-image: url('/images/about/rectangle-3456.png');
+  background-size: cover;
+  background-position: center;
+  padding: 3.5rem 1.5rem;
+}
+
+.personnage-bio-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  gap: 3.75rem;
+}
+
+.bio-text {
+  text-align: right;
+  color: var(--color-white);
+}
+
+.bio-text h2 {
+  font-family: var(--font-calligraphic);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 1.25rem;
+}
+
+.bio-text p {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.bio-info-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--color-white);
+}
+
+.info-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.info-icon {
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.info-value {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .personnage-bio-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .bio-text {
+    text-align: center;
+  }
+}

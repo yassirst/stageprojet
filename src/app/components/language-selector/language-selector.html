@@ -1,0 +1,12 @@
+<div class="lang-row">
+  @for (lang of languages(); track lang.code) {
+    <button
+      type="button"
+      class="lang-flag"
+      [class.active]="lang.active"
+      [attr.aria-label]="lang.label"
+      (click)="select(lang)">
+      <img class="flag" [src]="lang.flagUrl" [alt]="lang.label" />
+    </button>
+  }
+</div>

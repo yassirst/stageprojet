@@ -1,0 +1,30 @@
+<section class="personnage-episodes">
+  <div class="personnage-episodes-inner">
+    <div class="episodes-grid">
+      @for (episode of episodes(); track episode.titre) {
+        <button
+          type="button"
+          class="episode-card"
+          [attr.aria-label]="episode.titre"
+          (click)="openVideo(episode.videoId)"
+        >
+          <img class="thumb-img" [src]="episode.thumbnail" [alt]="episode.titre" />
+        </button>
+      }
+    </div>
+  </div>
+</section>
+
+@if (activeVideoUrl(); as url) {
+  <div class="video-modal" (click)="closeVideo()">
+    <div class="video-modal-inner" (click)="$event.stopPropagation()">
+      <button type="button" class="video-modal-close" aria-label="close" (click)="closeVideo()">✕</button>
+      <iframe
+        [src]="url"
+        class="video-modal-frame"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+}

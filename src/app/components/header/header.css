@@ -1,0 +1,78 @@
+.site-header {
+  background: transparent;
+  color: var(--color-white);
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: 50;
+}
+
+.header-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 48px;
+  width: auto;
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  border-bottom-color: var(--color-white);
+  opacity: 1;
+}
+
+.theme-toggle {
+  border: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--color-white);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+@media (max-width: 768px) {
+  .main-nav ul {
+    gap: 1rem;
+  }
+
+  .main-nav a span {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+<section class="personnage-related">
+  <div class="personnage-related-inner">
+    <div class="related-header">
+      <h2><span class="title-bar"></span>قد تحبون أيضًا</h2>
+      <div class="related-nav">
+        <button type="button" class="nav-btn" (click)="scroll('prev')" aria-label="السابق">›</button>
+        <button type="button" class="nav-btn" (click)="scroll('next')" aria-label="التالي">‹</button>
+      </div>
+    </div>
+
+    <div class="related-track" #scrollContainer>
+      @for (program of programs(); track program.id) {
+        <a class="related-card" [routerLink]="['/personnage', program.id]">
+          <div class="related-photo">
+            <img [src]="program.photoUrl" [alt]="displayName(program)" />
+          </div>
+          <span class="related-name">{{ displayName(program) }}</span>
+          <span class="related-role">{{ program.topic }}</span>
+        </a>
+      }
+    </div>
+  </div>
+</section>

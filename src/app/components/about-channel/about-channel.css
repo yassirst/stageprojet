@@ -1,0 +1,61 @@
+.about-channel {
+  background-image: url('/images/about/rectangle-3456.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1.5rem;
+}
+
+.about-channel-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3.75rem;
+  align-items: center;
+}
+
+.about-channel-text {
+  text-align: right;
+  color: var(--color-white);
+}
+
+.about-channel-text h2 {
+  font-family: var(--font-calligraphic);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+}
+
+.about-channel-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+}
+
+.about-channel-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.about-channel-logo img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 768px) {
+  .about-channel-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-channel-text {
+    text-align: center;
+    order: 2;
+  }
+
+  .about-channel-logo {
+    order: 1;
+  }
+}

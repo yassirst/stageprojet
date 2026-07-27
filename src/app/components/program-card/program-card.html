@@ -1,0 +1,17 @@
+<a class="program-card" [routerLink]="['/personnage', program().id]">
+  @if (program().photoUrl) {
+    <div class="card-photo-frame">
+      <img class="card-photo-img" [src]="program().photoUrl" [alt]="program().name" />
+    </div>
+  } @else {
+    <div class="card-photo-frame">
+      <div class="card-photo">
+        <span class="card-initials">{{ initials() }}</span>
+      </div>
+    </div>
+    <div class="card-overlay">
+      <h3 class="program-name">{{ program().name }}</h3>
+      <p class="presenter-name">{{ program().presenter }}</p>
+    </div>
+  }
+</a>

@@ -1,0 +1,62 @@
+.personnage-cta {
+  background-image: url('/images/about/rectangle-3456.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1.5rem;
+}
+
+.personnage-cta-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.cta-text {
+  text-align: right;
+  color: var(--color-white);
+}
+
+.cta-text h2 {
+  font-family: var(--font-calligraphic);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.cta-text p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 1.5rem;
+}
+
+.cta-text .badges {
+  width: 100%;
+  max-width: 320px;
+}
+
+.cta-visual img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .personnage-cta-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    text-align: center;
+  }
+
+  .cta-text .badges {
+    margin: 0 auto;
+  }
+
+  .cta-visual {
+    order: -1;
+  }
+}

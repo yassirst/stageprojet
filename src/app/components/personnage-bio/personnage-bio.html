@@ -1,0 +1,54 @@
+<section class="personnage-bio">
+  <div class="personnage-bio-inner">
+    <div class="bio-text">
+      <h2>السيرة الذاتية</h2>
+      <p>{{ program().bio }}</p>
+    </div>
+
+    <div class="bio-info-card">
+      @if (program().ville) {
+        <div class="info-item">
+          <span class="info-icon">📍</span>
+          <div>
+            <span class="info-label">المدينة</span>
+            <span class="info-value">{{ program().ville }}</span>
+          </div>
+        </div>
+      }
+      @if (program().specialite) {
+        <div class="info-item">
+          <span class="info-icon">🎓</span>
+          <div>
+            <span class="info-label">التخصص</span>
+            <span class="info-value">{{ program().specialite }}</span>
+          </div>
+        </div>
+      }
+      @if (program().riwaya) {
+        <div class="info-item">
+          <span class="info-icon">📖</span>
+          <div>
+            <span class="info-label">الرواية</span>
+            <span class="info-value">{{ program().riwaya }}</span>
+          </div>
+        </div>
+      }
+      <div class="info-item">
+        <span class="info-icon">📺</span>
+        <div>
+          <span class="info-label">القناة</span>
+          <span class="info-value">السادسة</span>
+        </div>
+      </div>
+      @if (program().anneeAdhesion) {
+        <div class="info-item">
+          <span class="info-icon">🗓️</span>
+          <div>
+            <span class="info-label">انضم منذ</span>
+            <span class="info-value">{{ program().anneeAdhesion }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

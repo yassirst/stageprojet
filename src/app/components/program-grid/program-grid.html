@@ -1,0 +1,11 @@
+<div class="program-grid">
+  @for (program of programs(); track program.id) {
+    <app-program-card [program]="program" />
+  } @empty {
+    <p class="no-results">لا توجد نتائج مطابقة</p>
+  }
+</div>
+
+<div class="grid-more">
+  <button type="button" class="btn-more">المزيد</button>
+</div>

@@ -1,0 +1,21 @@
+<section class="personnage-hero" [style.background-image]="heroBackground()">
+  <nav class="breadcrumb" aria-label="مسار التصفح">
+    <a routerLink="/">الرئيسية</a>
+    <span class="sep">←</span>
+    <a routerLink="/">البرامج</a>
+    <span class="sep">←</span>
+    <span class="current">{{ displayName() }}</span>
+  </nav>
+
+  <div class="hero-info">
+    <span class="topic-badge">{{ program().topic }}</span>
+    <h1 class="hero-name">{{ displayName() }}</h1>
+  </div>
+
+  @if (program().episodes) {
+    <div class="episodes-count">
+      <span class="stack-icon">🗂</span>
+      {{ program().episodes!.length }} حلقات
+    </div>
+  }
+</section>

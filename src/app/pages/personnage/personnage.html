@@ -1,0 +1,21 @@
+@if (program(); as p) {
+  <div class="hero-wrapper">
+    <app-header />
+    <app-personnage-hero [program]="p" />
+  </div>
+  @if (p.episodes && p.episodes.length) {
+    <app-personnage-episodes [episodes]="p.episodes" />
+  }
+  <app-personnage-related [programs]="relatedPrograms()" />
+  <app-personnage-cta />
+  <app-footer />
+} @else {
+  <div class="hero-wrapper">
+    <app-header />
+  </div>
+  <div class="not-found">
+    <p>لم يتم العثور على هذه الصفحة.</p>
+    <a routerLink="/">العودة إلى الرئيسية</a>
+  </div>
+  <app-footer />
+}

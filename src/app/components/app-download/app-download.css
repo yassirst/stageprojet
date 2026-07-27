@@ -1,0 +1,89 @@
+.app-download {
+  background-image: url('/images/about/rectangle-3456.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1.5rem;
+}
+
+.app-download-inner {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 6rem;
+  align-items: center;
+}
+
+.app-visual {
+  display: flex;
+  justify-content: flex-end;
+  padding-inline-start: 3.5rem;
+}
+
+.app-visual .tv {
+  width: 100%;
+  max-width: 620px;
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.35));
+}
+
+.app-download-inner > .phone {
+  position: absolute;
+  top: 70%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  width: 18%;
+  min-width: 150px;
+  filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.35));
+}
+
+.app-text {
+  text-align: right;
+  color: var(--color-white);
+}
+
+.app-text h3 {
+  font-family: var(--font-calligraphic);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.app-text .lead {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 1rem;
+}
+
+.app-text .desc {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 1.75rem;
+}
+
+.app-text .badges {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 900px) {
+  .app-download-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .app-visual {
+    order: -1;
+    padding-inline-start: 0;
+    justify-content: center;
+    padding-top: 2.5rem;
+  }
+
+  .app-text {
+    text-align: center;
+  }
+
+  .app-text .badges {
+    margin: 0 auto;
+  }
+}

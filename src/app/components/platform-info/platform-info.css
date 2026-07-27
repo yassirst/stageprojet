@@ -1,0 +1,54 @@
+.platform-info {
+  background-image: url('/images/about/rectangle-3456.png');
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 1.5rem 6rem;
+}
+
+.platform-info-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 3.75rem;
+  align-items: center;
+}
+
+.platform-info-text {
+  text-align: right;
+  color: var(--color-white);
+}
+
+.platform-info-text h2 {
+  font-family: var(--font-calligraphic);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+}
+
+.platform-info-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.92);
+  margin: 0;
+}
+
+.platform-info-visual img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
+@media (max-width: 900px) {
+  .platform-info-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .platform-info-text {
+    text-align: center;
+    order: 2;
+  }
+
+  .platform-info-visual {
+    order: 1;
+  }
+}
