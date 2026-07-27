@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+﻿import { Component, input } from '@angular/core';
 import { Program } from '../../models/program.model';
 
 @Component({
@@ -10,3 +10,4 @@ import { Program } from '../../models/program.model';
 export class PersonnageBio {
   program = input.required<Program>();
 }
+

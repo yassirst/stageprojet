@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+﻿import { Component, signal } from '@angular/core';
 import { Language } from '../../models/language.model';
 
 @Component({
@@ -9,12 +9,12 @@ import { Language } from '../../models/language.model';
 })
 export class LanguageSelector {
   languages = signal<Language[]>([
-    { code: 'de', label: 'الألمانية', flagUrl: '/images/flags/de.png' },
-    { code: 'it', label: 'الإيطالية', flagUrl: '/images/flags/it.png' },
-    { code: 'es', label: 'الإسبانية', flagUrl: '/images/flags/es.png' },
-    { code: 'gb', label: 'الإنجليزية', flagUrl: '/images/flags/gb.png' },
-    { code: 'fr', label: 'الفرنسية', flagUrl: '/images/flags/fr.png' },
-    { code: 'ma', label: 'العربية', flagUrl: '/images/flags/ma.png', active: true },
+    { code: 'de', label: 'Ø§Ù„Ø£Ù„Ù…Ø§Ù†ÙŠØ©', flagUrl: '/stageprojet/images/flags/de.png' },
+    { code: 'it', label: 'Ø§Ù„Ø¥ÙŠØ·Ø§Ù„ÙŠØ©', flagUrl: '/stageprojet/images/flags/it.png' },
+    { code: 'es', label: 'Ø§Ù„Ø¥Ø³Ø¨Ø§Ù†ÙŠØ©', flagUrl: '/stageprojet/images/flags/es.png' },
+    { code: 'gb', label: 'Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©', flagUrl: '/stageprojet/images/flags/gb.png' },
+    { code: 'fr', label: 'Ø§Ù„ÙØ±Ù†Ø³ÙŠØ©', flagUrl: '/stageprojet/images/flags/fr.png' },
+    { code: 'ma', label: 'Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©', flagUrl: '/stageprojet/images/flags/ma.png', active: true },
   ]);
 
   select(selected: Language): void {
@@ -23,3 +23,4 @@ export class LanguageSelector {
     );
   }
 }
+

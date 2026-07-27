@@ -1,50 +1,50 @@
-<section class="personnage-bio">
+﻿<section class="personnage-bio">
   <div class="personnage-bio-inner">
     <div class="bio-text">
-      <h2>السيرة الذاتية</h2>
+      <h2>Ø§Ù„Ø³ÙŠØ±Ø© Ø§Ù„Ø°Ø§ØªÙŠØ©</h2>
       <p>{{ program().bio }}</p>
     </div>
 
     <div class="bio-info-card">
       @if (program().ville) {
         <div class="info-item">
-          <span class="info-icon">📍</span>
+          <span class="info-icon">ðŸ“</span>
           <div>
-            <span class="info-label">المدينة</span>
+            <span class="info-label">Ø§Ù„Ù…Ø¯ÙŠÙ†Ø©</span>
             <span class="info-value">{{ program().ville }}</span>
           </div>
         </div>
       }
       @if (program().specialite) {
         <div class="info-item">
-          <span class="info-icon">🎓</span>
+          <span class="info-icon">ðŸŽ“</span>
           <div>
-            <span class="info-label">التخصص</span>
+            <span class="info-label">Ø§Ù„ØªØ®ØµØµ</span>
             <span class="info-value">{{ program().specialite }}</span>
           </div>
         </div>
       }
       @if (program().riwaya) {
         <div class="info-item">
-          <span class="info-icon">📖</span>
+          <span class="info-icon">ðŸ“–</span>
           <div>
-            <span class="info-label">الرواية</span>
+            <span class="info-label">Ø§Ù„Ø±ÙˆØ§ÙŠØ©</span>
             <span class="info-value">{{ program().riwaya }}</span>
           </div>
         </div>
       }
       <div class="info-item">
-        <span class="info-icon">📺</span>
+        <span class="info-icon">ðŸ“º</span>
         <div>
-          <span class="info-label">القناة</span>
-          <span class="info-value">السادسة</span>
+          <span class="info-label">Ø§Ù„Ù‚Ù†Ø§Ø©</span>
+          <span class="info-value">Ø§Ù„Ø³Ø§Ø¯Ø³Ø©</span>
         </div>
       </div>
       @if (program().anneeAdhesion) {
         <div class="info-item">
-          <span class="info-icon">🗓️</span>
+          <span class="info-icon">ðŸ—“ï¸</span>
           <div>
-            <span class="info-label">انضم منذ</span>
+            <span class="info-label">Ø§Ù†Ø¶Ù… Ù…Ù†Ø°</span>
             <span class="info-value">{{ program().anneeAdhesion }}</span>
           </div>
         </div>
@@ -52,3 +52,4 @@
     </div>
   </div>
 </section>
+

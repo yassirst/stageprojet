@@ -1,4 +1,4 @@
-.site-header {
+﻿.site-header {
   background: transparent;
   color: var(--color-white);
   position: absolute;
@@ -76,3 +76,4 @@
     display: none;
   }
 }
+

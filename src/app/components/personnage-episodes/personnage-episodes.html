@@ -1,4 +1,4 @@
-<section class="personnage-episodes">
+﻿<section class="personnage-episodes">
   <div class="personnage-episodes-inner">
     <div class="episodes-grid">
       @for (episode of episodes(); track episode.titre) {
@@ -18,7 +18,7 @@
 @if (activeVideoUrl(); as url) {
   <div class="video-modal" (click)="closeVideo()">
     <div class="video-modal-inner" (click)="$event.stopPropagation()">
-      <button type="button" class="video-modal-close" aria-label="close" (click)="closeVideo()">✕</button>
+      <button type="button" class="video-modal-close" aria-label="close" (click)="closeVideo()">âœ•</button>
       <iframe
         [src]="url"
         class="video-modal-frame"
@@ -28,3 +28,4 @@
     </div>
   </div>
 }
+

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-personnage-cta',
@@ -7,3 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './personnage-cta.css',
 })
 export class PersonnageCta {}
+

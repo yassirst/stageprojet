@@ -1,4 +1,4 @@
-<a class="program-card" [routerLink]="['/personnage', program().id]">
+﻿<a class="program-card" [routerLink]="['/personnage', program().id]">
   @if (program().photoUrl) {
     <div class="card-photo-frame">
       <img class="card-photo-img" [src]="program().photoUrl" [alt]="program().name" />
@@ -15,3 +15,4 @@
     </div>
   }
 </a>
+

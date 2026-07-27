@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { Header } from '../../components/header/header';
 import { AboutHero } from '../../components/about-hero/about-hero';
 import { AboutChannel } from '../../components/about-channel/about-channel';
@@ -13,3 +13,4 @@ import { Footer } from '../../components/footer/footer';
   styleUrl: './about.css',
 })
 export class About {}
+

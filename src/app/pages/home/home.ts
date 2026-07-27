@@ -1,4 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
+﻿import { Component, computed, signal } from '@angular/core';
 import { Header } from '../../components/header/header';
 import { HeroBanner } from '../../components/hero-banner/hero-banner';
 import { LanguageSelector } from '../../components/language-selector/language-selector';
@@ -41,3 +41,4 @@ export class Home {
     this.filters.set(filters);
   }
 }
+

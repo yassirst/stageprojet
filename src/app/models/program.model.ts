@@ -1,4 +1,4 @@
-export interface Episode {
+﻿export interface Episode {
   titre: string;
   duree: string;
   categorie: string;
@@ -20,3 +20,4 @@ export interface Program {
   episodes?: Episode[];
   heroPhoto?: string;
 }
+

@@ -1,4 +1,4 @@
-.site-footer {
+﻿.site-footer {
   background: var(--color-primary);
   color: var(--color-white);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -149,3 +149,4 @@
     grid-template-columns: 1fr;
   }
 }
+

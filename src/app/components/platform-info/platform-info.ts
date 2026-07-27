@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-platform-info',
@@ -7,3 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './platform-info.css',
 })
 export class PlatformInfo {}
+

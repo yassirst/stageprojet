@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+﻿import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -16,3 +16,4 @@ export class Header {
     document.documentElement.classList.toggle('dark-theme', next);
   }
 }
+

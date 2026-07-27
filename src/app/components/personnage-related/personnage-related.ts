@@ -1,4 +1,4 @@
-import { Component, ElementRef, input, viewChild } from '@angular/core';
+﻿import { Component, ElementRef, input, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Program } from '../../models/program.model';
 
@@ -24,3 +24,4 @@ export class PersonnageRelated {
     return program.presenter || program.name;
   }
 }
+

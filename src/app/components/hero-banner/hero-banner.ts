@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-hero-banner',
@@ -7,3 +7,4 @@ import { Component } from '@angular/core';
   styleUrl: './hero-banner.css',
 })
 export class HeroBanner {}
+

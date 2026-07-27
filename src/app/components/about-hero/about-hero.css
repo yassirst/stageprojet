@@ -1,9 +1,9 @@
-.about-hero {
+﻿.about-hero {
   position: relative;
   background-color: var(--color-primary);
   background-image:
     linear-gradient(0deg, rgba(10, 61, 46, 0.75), rgba(10, 61, 46, 0.35)),
-    url('/images/about/hero-bg-texture.png');
+    url('/stageprojet/images/about/hero-bg-texture.png');
   background-size: cover;
   background-position: center;
   min-height: 60vh;
@@ -37,3 +37,4 @@
   line-height: 1.8;
   margin: 0 auto;
 }
+

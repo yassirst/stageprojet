@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+﻿import { Component, input } from '@angular/core';
 import { Program } from '../../models/program.model';
 import { ProgramCard } from '../program-card/program-card';
 
@@ -11,3 +11,4 @@ import { ProgramCard } from '../program-card/program-card';
 export class ProgramGrid {
   programs = input<Program[]>([]);
 }
+

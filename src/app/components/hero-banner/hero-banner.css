@@ -1,9 +1,9 @@
-.hero {
+﻿.hero {
   position: relative;
   background-color: var(--color-primary);
   background-image:
     linear-gradient(180deg, rgba(14, 46, 37, 0.55), rgba(20, 63, 50, 0.72)),
-    url('/images/hero-bg.png');
+    url('/stageprojet/images/hero-bg.png');
   background-size: cover;
   background-position: center;
   min-height: 460px;
@@ -98,3 +98,4 @@
   background: var(--color-white);
   color: var(--color-primary);
 }
+

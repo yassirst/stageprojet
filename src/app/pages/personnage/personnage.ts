@@ -1,4 +1,4 @@
-import { Component, computed, inject } from '@angular/core';
+﻿import { Component, computed, inject } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { map } from 'rxjs';
@@ -37,3 +37,4 @@ export class Personnage {
 
   relatedPrograms = computed(() => PROGRAMS.filter((p) => p.id !== this.id()));
 }
+

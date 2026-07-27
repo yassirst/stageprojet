@@ -1,10 +1,11 @@
-import { Component, computed, inject, input, signal } from '@angular/core';
+﻿import { Component, computed, inject, input, signal } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Episode } from '../../models/program.model';
 
 @Component({
   selector: 'app-personnage-episodes',
-  imports: [],
+  imports:
+   [],
   templateUrl: './personnage-episodes.html',
   styleUrl: './personnage-episodes.css',
 })
@@ -31,3 +32,4 @@ export class PersonnageEpisodes {
     this.activeVideoId.set(null);
   }
 }
+
