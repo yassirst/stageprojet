@@ -1,9 +1,9 @@
-﻿<section class="personnage-hero" [style.background-image]="heroBackground()">
-  <nav class="breadcrumb" aria-label="Ù…Ø³Ø§Ø± Ø§Ù„ØªØµÙØ­">
-    <a routerLink="/">Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©</a>
-    <span class="sep">â†</span>
-    <a routerLink="/">Ø§Ù„Ø¨Ø±Ø§Ù…Ø¬</a>
-    <span class="sep">â†</span>
+<section class="personnage-hero" [style.background-image]="heroBackground()">
+  <nav class="breadcrumb" aria-label="مسار التصفح">
+    <a routerLink="/">الرئيسية</a>
+    <span class="sep">←</span>
+    <a routerLink="/">البرامج</a>
+    <span class="sep">←</span>
     <span class="current">{{ displayName() }}</span>
   </nav>
 
@@ -14,9 +14,10 @@
 
   @if (program().episodes) {
     <div class="episodes-count">
-      <span class="stack-icon">ðŸ—‚</span>
-      {{ program().episodes!.length }} Ø­Ù„Ù‚Ø§Øª
+      <span class="stack-icon">🗂</span>
+      {{ program().episodes!.length }} حلقات
     </div>
   }
 </section>
+
 

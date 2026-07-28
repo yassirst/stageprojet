@@ -1,26 +1,26 @@
-﻿<header class="site-header">
+<header class="site-header">
   <div class="header-inner">
     <div class="logo">
-      <img class="logo-img" src="/stageprojet/images/logo.png" alt="Ø§Ù„Ø³Ø§Ø¯Ø³Ø©" />
+      <img class="logo-img" src="/stageprojet/images/logo.png" alt="السادسة" />
     </div>
 
     <nav class="main-nav">
       <ul>
-        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©</a></li>
-        <li><a href="#">Ù…Ø¨Ø§Ø´Ø±Ø©</a></li>
+        <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">الرئيسية</a></li>
+        <li><a href="#">مباشرة</a></li>
         <li class="dropdown">
           <a href="#">
-            Ù…ØºØ§Ø±Ø¨Ø© Ø§Ù„Ø¹Ø§Ù„Ù…
+            مغاربة العالم
             <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
               <path d="M7 10l5 5 5-5z" />
             </svg>
           </a>
         </li>
-        <li><a routerLink="/about" routerLinkActive="active">Ù…Ù† Ù†Ø­Ù†ØŸ</a></li>
+        <li><a routerLink="/about" routerLinkActive="active">من نحن؟</a></li>
       </ul>
     </nav>
 
-    <button type="button" class="theme-toggle" (click)="toggleTheme()" aria-label="ØªØ¨Ø¯ÙŠÙ„ Ø§Ù„Ù…Ø¸Ù‡Ø±">
+    <button type="button" class="theme-toggle" (click)="toggleTheme()" aria-label="تبديل المظهر">
       @if (darkMode()) {
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path
@@ -35,4 +35,5 @@
     </button>
   </div>
 </header>
+
 

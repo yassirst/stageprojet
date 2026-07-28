@@ -14,3 +14,4 @@ import { Footer } from '../../components/footer/footer';
 })
 export class About {}
 
+

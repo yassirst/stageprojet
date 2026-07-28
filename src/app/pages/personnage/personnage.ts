@@ -38,3 +38,4 @@ export class Personnage {
   relatedPrograms = computed(() => PROGRAMS.filter((p) => p.id !== this.id()));
 }
 
+
